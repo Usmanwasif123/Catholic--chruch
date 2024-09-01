@@ -3,27 +3,15 @@ let searchForm = document.querySelector('.header .search-form');
 let loginForm = document.querySelector('.header .login-form');
 let contactInfo = document.querySelector('.contact-info');
 
-document.querySelector('#menu-btn').onclick = () =>{
-   navbar.classList.toggle('active');
-   searchForm.classList.remove('active');
-   loginForm.classList.remove('active');
-};
 
-document.querySelector('#search-btn').onclick = () =>{
-   searchForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   loginForm.classList.remove('active');
-};
+document.addEventListener('DOMContentLoaded', function () {
+   const menuToggle = document.getElementById('menu-toggle');
+   const navbar = document.querySelector('.navbar');
 
-document.querySelector('#login-btn').onclick = () =>{
-   loginForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   searchForm.classList.remove('active'); 
-};
-
-document.querySelector('#info-btn').onclick = () =>{
-   contactInfo.classList.add('active');
-}
+   menuToggle.addEventListener('click', function () {
+       navbar.classList.toggle('active');
+   });
+});
 
 document.querySelector('#close-contact-info').onclick = () =>{
    contactInfo.classList.remove('active');
@@ -36,19 +24,14 @@ window.onscroll = () =>{
    contactInfo.classList.remove('active');
 }
 
-var swiper = new Swiper(".home-slider", {
-   loop:true,
-   grabCursor:true,
+
+var swiper = new Swiper(".events-slider", {
+   loop: true,
+   grabCursor: true,
    navigation: {
      nextEl: ".swiper-button-next",
      prevEl: ".swiper-button-prev",
    },
-});
-
-var swiper = new Swiper(".reviews-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
    breakpoints: {
       640: {
         slidesPerView: 1,   
@@ -59,42 +42,32 @@ var swiper = new Swiper(".reviews-slider", {
       991: {
         slidesPerView: 3,
       },
+      1200: {
+         slidesPerView: 4,
+      }
    },
 });
 
-var swiper = new Swiper(".blogs-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-   },
-});
 
-var swiper = new Swiper(".logo-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      450: {
-         slidesPerView: 2,
-       },
-      640: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      1000: {
-        slidesPerView: 5,
-      },
-   },
+// Play/pause functionality
+document.querySelectorAll('.play-pause-button').forEach(function (button, index) {
+   const video = button.previousElementSibling; // Get the corresponding video element
+
+   button.addEventListener('click', function () {
+       if (video.paused) {
+           // Pause all other videos
+           document.querySelectorAll('.right-video').forEach(function (vid) {
+               if (vid !== video) {
+                   vid.pause();
+                   vid.nextElementSibling.classList.remove('playing');
+               }
+           });
+
+           video.play();
+           button.classList.add('playing'); // Optional: add a class for styling the playing state
+       } else {
+           video.pause();
+           button.classList.remove('playing'); // Optional: remove the class for styling the playing state
+       }
+   });
 });

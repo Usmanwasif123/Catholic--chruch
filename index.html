@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Constructon Website</title>
+        <title>Catholic</title>
         
         <!-- font awesome cdn link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
         <!--custom css file link-->
         <link rel="stylesheet" href="./css/style.css" />
@@ -23,611 +23,375 @@
 
         <header class="header">
 
-            <a href="#" class="logo">We<span>Build</span></a>
+            <a href="#" class="logo">catholic</a>
 
             <nav class="navbar">
                 <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#services">services</a>
-                <a href="#projects">projects</a>
-                <a href="#pricing">pricing</a>
-                <a href="#contact">contact</a>
-                <a href="#blogs">blogs</a>
+                <a href="#about">about us</a>
+                <a href="#ministries">ministries</a>
+                <a href="#news">sermons</a>
+                <a href="#gallery">gallery</a>
+                <a href="#pages">pages</a>
+                <a href="tel:+61 3 8376 6284">contact</a>
             </nav>
 
-                <div class="icons">
-                    <div id="menu-btn" class="fas fa-bars"></div>
-                    <div id="info-btn" class="fas fa-info-circle"></div>
-                    <div id="search-btn" class="fas fa-search"></div>
-                    <div id="login-btn" class="fas fa-user"></div>
-                </div>
-
-                <form action="" class="search-form">
-                    <input type="search" name="" placeholder="search here.." id="search-box">
-                    <label for="search-box" class="fas fa-search"></label>
-                </form>
-
-                <form action="" class="login-form">
-                    <h3>login form</h3>
-                    <input type="email" placeholder="enter your email" class="box">
-                    <input type="password" placeholder="enter your password" class="box">
-                    <div class="flex">
-                        <input type="checkbox" name="" id="remember-me">
-                        <label for="remember-me">remember me</label>
-                        <a href="#">forget password?</a>
-                    </div>
-                    <input type="submit" value="login now" class="btn">
-                    <p>don't have an account <a href="#">create one!</a></p>
-
-                </form>
+            <!-- Mobile menu button -->
+           <div class="menu-toggle" id="menu-toggle">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+           </div>
+           
         </header>
-
-        <div class="contact-info">
-
-            <div id="close-contact-info" class="fas fa-times"></div>
-
-            <div class="info">
-                <i class="fas fa-phone"></i>
-                <h3>phone number</h3>
-                <p>+123-456-7890</p>
-                <p>+111-222-333</p>
-            </div>
-
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <h3>email address</h3>
-                <p>shaikhanas@gmail.com</p>
-                <p>anasbhai@gmail.com</p>
-            </div>
-
-            <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>office address</h3>
-                <p>karachi, pakistan - 400104</p>
-            </div>
-
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
 
 
         <!--Home section -->
 
         <section class="home" id="home">
-            <div class="swiper home-slider">
-
-                 <div class="swiper-wrapper">
-                    <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+            <div class="wrapper-container">
+                 <div class="wrapper">
+                    <section class="bg-image" style="background: url(images/home.png) no-repeat center center;">
                         <div class="content">
-                         <h3>we provide best service</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati quisquam itaque, ducimus iste distinctio?</p>
-                            <a href="#about" class="btn">get started</a>
+                         <h2>Let us PRAY TOGETHER </h2>
+                         <h1>FOR A BETTER WORLD</h1>
+                           <a href="#about" class="btn">join us<span>→</span></a>
                         </div>
                      </section>
-
-                     <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
-                        <div class="content">
-                         <h3>making dream come to life</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati quisquam itaque, ducimus iste distinctio?</p>
-                            <a href="#about" class="btn">get started</a>
+                    </div>
+                    <div class="banner-footer">
+                        <div class="footer-wrapper">
+                            <div class="footer-content">
+                            <h3>UPCOMING EVENT</h3>
+                            <h2>“I am the way, truth & life” by Rev. Jose Mathew</h2>
                         </div>
-                     </section>
-
-                     <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
-                        <div class="content">
-                         <h3>from concept to creation</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati quisquam itaque, ducimus iste distinctio?</p>
-                            <a href="#about" class="btn">get started</a>
-                        </div>
-                     </section>
-
+                              <a href="#about" class="btn">program details<span>→</span></a>
+                           </div>
+                    </div>
                 </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
-            </div>
         </section>
 
         <!--About section-->
 
         <section class="about" id="about">
-            <h1 class="heading">about us</h1>
-
-            <div class="row">
-
-                <div class="video">
-                    <video src="images/about-vid.mp4" loop muted autoplay></video>
-                </div>
-
-                <div class="content">
-                    <h3>We will provide you the best work which you dreamt for!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere libero aspernatur dolore aut fuga autem corporis deleniti rerum obcaecati perspiciatis?</p>
-                    <a href="#services" class="btn">read more</a>
-                </div>
-
-            </div>
-
-            <div class="box-container">
-                <div class="box">
-                    <h3>10+</h3>
-                    <p>years of experience</p>
-                </div>
-
-                <div class="box">
-                    <h3>1500+</h3>
-                    <p>project completed</p>
-                </div>
-
-                <div class="box">
-                    <h3>790+</h3>
-                    <p>satisfied clients</p>
-                </div>
-
-                <div class="box">
-                    <h3>450+</h3>
-                    <p>active workers</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Service section-->
-
-        <section class="services" id="services">
-
-            <h1 class="heading">our services</h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="images/service-1.png" alt="">
-                    <h3>building construction</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-2.png" alt="">
-                    <h3>house renovation</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-3.png" alt="">
-                    <h3>architechture design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-4.png" alt="">
-                    <h3>material supply</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-5.png" alt="">
-                    <h3>construction consultant</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-6.png" alt="">
-                    <h3>interior design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-7.png" alt="">
-                    <h3>building maintenance</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-
-                <div class="box">
-                    <img src="images/service-8.png" alt="">
-                    <h3>building renovation</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed, asperiores velit perspiciatis deleniti esse.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--project section-->
-        <section class="projects" id="projects">
-
-            <h1 class="heading">our projects</h1>
-
-            <div class="box-container">
-
-                <a href="images/project-1.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-1.jpg" alt="">
+            <div class="about-container">
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>CATHOLIC CHURCH</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
                     </div>
+                </div>
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>MINISTRY AND SERMON</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>BULLETIN AND PROGRAMS</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Events section-->
+
+        <section class="events" id="events">
+
+            <h1 class="heading">PROGRAMS & EVENTS</h1>
+
+            <div class="swiper box-container events-slider">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <h2>JUL 16</h2>
+                    <h3>Weekly Meeting & Prayer</h3>
+                    <h4>Monday 07:00 AM</h4>
+                    <a href="" class="btn btn-detail">details<span>→</span></a>
+                </div>
+                <div class="swiper-slide box">
+                    <h2>JUL 29</h2>
+                    <h3>Show me your faith</h3>
+                    <h4>Thursday 02:00 PM</h4>
+                    <a href="" class="btn btn-detail">details<span>→</span></a>
+                </div>
+                <div class="swiper-slide box">
+                    <h2>SEP 19</h2>
+                    <h3>Perseravance of the saints</h3>
+                    <h4>Saturday 10:00 AM</h4>
+                    <a href="" class="btn btn-detail">details<span>→</span></a>
+                </div>
+                <div class="swiper-slide box">
+                    <h2>OCT 14</h2>
+                    <h3>God’s irresistable grace</h3>
+                    <h4>Sunday 11:00 AM</h4>
+                    <a href="" class="btn btn-detail">details<span>→</span></a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!--news section-->
+
+        <section class="news" id="news">
+            <div class="news-wrapper">
+                <div class="left">
+                    <h2>LATEST BULLETIN</h2>
+                    <div class="top-image"></div>
+                    <div class="bottom-image"></div>
+                </div>
+                <div class="center">
+                    <div class="content-wrapper">
                     <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </div>
-                </a>
-
-                <a href="images/project-2.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-2.jpg" alt="">
-                    </div>
+                    <h2>Perseverance of the Saints</h2>
+                    <h5>on 17th June 2014 by <span>Vincent John</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla </p>
+                    <a hef="" class="btn btn-article">read article<span>→</span></a>
+                </div>  
                     <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
-                    </div>
-                    <i class="fas fa-plus"></i>
+                    <h2>Perseverance of the Saints</h2>
+                    <h5>on 17th June 2014 by <span>Vincent John</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla </p>
+                    <a hef="" class="btn btn-article">read article<span>→</span></a>
                 </div>
-                </a>
-
-                <a href="images/project-3.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-3.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
-                    </div>
-                    <i class="fas fa-plus"></i>
                 </div>
-                </a>
-
-                <a href="images/project-4.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-4.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
-                    </div>
-                    <i class="fas fa-plus"></i>
                 </div>
-                </a>
-
-                <a href="images/project-5.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-5.jpg" alt="">
+                <div class="right">
+                    <h2>RECENT Sermons</h2>
+                    <div class="video-container">
+                        <video id="myVideo1" class="right-video" width="280" height="240" autoplay>
+                            <source src="/images/church-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div id="playPauseBtn1" class="play-pause-button"></div>
                     </div>
-                    <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
+                    
+                    <div class="right-dropdown">
+                        <h2 class="dropdown-title"><span>></span>Heavens and the earth</h2>
+                        <p>24:15 mins</p>
+                        <div class="video-container hidden">
+                            <video autoplay id="myVideo2" class="right-video">
+                                <source src="/images/church-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="playPauseBtn2" class="play-pause-button"></div>
+                        </div>
+                    
+                        <h2 class="dropdown-title"><span>></span>Heavens and the earth</h2>
+                        <p>24:15 mins</p>
+                        <div class="video-container hidden">
+                            <video id="myVideo3" class="right-video" width="280" height="240" autoplay>
+                                <source src="/images/church-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="playPauseBtn3" class="play-pause-button"></div>
+                        </div>
+                    
+                        <h2 class="dropdown-title"><span>></span>Heavens and the earth</h2>
+                        <p>24:15 mins</p>
+                        <div class="video-container hidden">
+                            <video id="myVideo4" class="right-video" width="280" height="240" autoplay>
+                                <source src="/images/church-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="playPauseBtn4" class="play-pause-button"></div>
+                        </div>
+                    
+                        <h2 class="dropdown-title"><span>></span>Heavens and the earth</h2>
+                        <p>24:15 mins</p>
+                        <div class="video-container hidden">
+                            <video id="myVideo5" class="right-video" width="280" height="240">
+                                <source src="/images/church-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div id="playPauseBtn5" class="play-pause-button"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-plus"></i>
+                    
                 </div>
-                </a>
-
-                <a href="images/project-6.jpg" class="box">
-                    <div class="image">
-                        <img src="images/project-6.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="info">
-                        <h3>dream home</h3>
-                        <p>construction, design</p>
-                    </div>
-                    <i class="fas fa-plus"></i>
-                </div>
-                </a>
-
             </div>
         </section>
 
-        <!--reviews section-->
+<!--gallery section-->
+<section class="gallery" id="gallery">
+    <h1 class="heading">our gallery</h1>
 
-        <section class="reviews">
+    <div class="box-container">
+        <a href="images/gallery-1.png" class="box">
+            <div class="image">
+                <img src="images/gallery-1.png" alt="">
+            </div>
+        </a>
 
-            <h1 class="heading"> clients reviews </h1>
+        <a href="images/gallery-2.png" class="box">
+            <div class="image">
+                <img src="images/gallery-2.png" alt="">
+            </div>
+        </a>
 
-            <div class="swiper reviews-slider">
+        <a href="images/gallery-3.png" class="box">
+            <div class="image">
+                <img src="images/gallery-3.png" alt="">
+            </div>
+        </a>
 
-                <div class="swiper wrapper">
+        <a href="images/gallery-6.png" class="box">
+            <div class="image">
+                <img src="images/gallery-6.png" alt="">
+            </div>
+        </a>
 
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-1.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
+        <a href="images/gallery-5.png" class="box">
+            <div class="image">
+                <img src="images/gallery-5.png" alt="">
+            </div>
+        </a>
+
+        <a href="images/gallery-4.png" class="box">
+            <div class="image">
+                <img src="images/gallery-4.png" alt="">
+            </div>
+        </a>
+
+        <a href="images/gallery-7.png" class="box">
+            <div class="image">
+                <img src="images/gallery-7.png" alt="">
+            </div>
+        </a>
+
+        <a href="images/gallery-8.png" class="box">
+            <div class="image">
+                <img src="images/gallery-8.png" alt="">
+            </div>
+        </a>
+    </div>
+</section>
+
+    <!--verses section-->
+        <div class="verses" id="verses">
+            <div class="verses-wrapper">
+                <div class="verses-content">
+                <h3>BIBLE VERSES</h3>
+                <span class="right-quote">❝
+                    <h2>For God so loved the world that he gave his one and only Son</h2><span class="left-quote">❞</span>
+                </span>
+                <h4>John 3:16</h4>
+            </div>
+            </div>
+        </div>
+
+    <!--ministries section-->
+         <section class="about" id="ministries">
+            <h2>our ministries</h2>
+            <div class="about-container">
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>CATHOLIC CHURCH</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-2.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>MINISTRY AND SERMON</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-3.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-4.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-5.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta eveniet saepe reprehenderit nihil! Delectus dignissimos recusandae reprehenderit a nam, reiciendis perspiciatis asperiores accusamus enim consequatur itaque pariatur nemo animi!</p>
-                        <div class="user">
-                            <img src="images/pic-6.png" alt="">
-                            <div class="info">
-                                <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="image-box">
+                    <div class="about-content">
+                        <h3>BULLETIN AND PROGRAMS</h3>
+                        <p>No temptation has seized you except what is common to man. And </p>
+                        <a href="read-more" class="btn-read">Read more<span>→</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--pricing section-->
-
-        <section class="pricing" id="pricing">
-
-            <h1 class="heading">our pricing</h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <i class="fas fa-home"></i>
-                    <h3>basic plan</h3>
-                    <div class="price"><span>$</span>250<span>/mo</span></div>
-                    <div class="list">
-                        <p>interior design</p>
-                        <p>refurbishment</p>
-                        <p>material supply</p>
-                        <p>maintenance</p>
-                        <p>24/7 support</p>
-                    </div>
-                    <a href="#" class="btn">choose plan</a>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-building"></i>
-                    <h3>premium plan</h3>
-                    <div class="price"><span>$</span>650<span>/mo</span></div>
-                    <div class="list">
-                        <p>interior design</p>
-                        <p>refurbishment</p>
-                        <p>material supply</p>
-                        <p>maintenance</p>
-                        <p>24/7 support</p>
-                    </div>
-                    <a href="#" class="btn">choose plan</a>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-city"></i>
-                    <h3>ultimate plan</h3>
-                    <div class="price"><span>$</span>1250<span>/mo</span></div>
-                    <div class="list">
-                        <p>interior design</p>
-                        <p>refurbishment</p>
-                        <p>material supply</p>
-                        <p>maintenance</p>
-                        <p>24/7 support</p>
-                    </div>
-                    <a href="#" class="btn">choose plan</a>
-                </div>
-            </div>
-        </section>
-
-        <!--contact section-->
-
-        <section class="contact" id="contact">
-
-            <h1 class="heading"> contact us </h1>
-
-            <div class="row">
-
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.79565827897!2d72.
-                82321486574902!3d19.141649671203176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7
-                b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047%
-                2C%20India!5e0!3m2!1sen!2s!4v1677671798201!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
-
-
-                <form action="">
-                    <h3>get in touch</h3>
-                    <input type="text" placeholder="name" class="box">
-                    <input type="email" placeholder="email" class="box">
-                    <input type="number" placeholder="phone" class="box">
-                    <textarea name="" placeholder="message" class="box"></textarea>
-                    <input type="submit" value="send message" class="btn">
-                </form>
-            </div>
-        </section>
-
-        <!--blogs section-->
-        <section class="blogs" id="blogs">
-
-            <h1 class="heading">our blogs</h1>
-
-            <div class="swiper blogs-slider">
-
-                <div class="swiper wrapper">
-
-                    <div class="swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-1.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class=" swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-2.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-3.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class=" swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-4.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class=" swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-5.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class=" swiper-slide slide">
-                        <div class="image">
-                            <img src="images/blog-6.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--client logo section-->
-        
-        <section class="logo-container">
-            <div class="swiper logo-slider">
-                <div class="swiper wrapper">
-                    <div class="swiper-slide slide"><img src="images/client-logo-1.png"></div>
-                    <div class="swiper-slide slide"><img src="images/client-logo-2.png"></div>
-                    <div class="swiper-slide slide"><img src="images/client-logo-3.png"></div>
-                    <div class="swiper-slide slide"><img src="images/client-logo-4.png"></div>
-                    <div class="swiper-slide slide"><img src="images/client-logo-5.png"></div>
-                    <div class="swiper-slide slide"><img src="images/client-logo-6.png"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--footer section-->
-
+    <!--footer section-->
+    <div class="footer-header">
+        <h2>
+            <span>SUBSCRIBE</span><br/>
+            TO OUR NEWSLETTER
+        </h2>
+        <input type="email" placeholder="Enter your email" class="footer-input"/>
+        <a href="#subcribe" class="btn btn-subscribe">SUBSCRIBE now<span>→</span></a>
+    </div>
         <section class="footer">
-
-            <div class="links">
-
+            
+            <div class="footer-wrapper">
+                <div class="church-content">
+                    <h2>ABOUT THE CHURCH</h2>
+                    <p>For the word of God is living and active. Sharper than any double</p>
+                </div>
+                <div class="quicklink-content">
+                    <h2>QUICK LINKS</h2>
+                    <ul class="list-items">
+                        <a href='#events' style="color: white;"><li>Upcoming events</li></a>
+                        <a href='#ministries' style="color: white;"><li>Ministries</li></a>
+                        <a href='#news' style="color: white;"><li>Recent Sermons</li></a>
+                        <a href="tel:+61 3 8376 6284" style="color:white"><li>Contact us</li></a>
+                    </ul>
+                </div>
+                <div class="contact-content">
+                    <h2>CONTACT US</h2>
+                    <h3>Catholic Church </h3>
+                    <a href='https://maps.app.goo.gl/Qe1kjCkmTa5xYL5X7' target="_blank" style="color: white"><p>121 King Street, Melbourne  Victoria 3000 Australia</p></a>
+                    <a href="tel:+61 3 8376 6284" style="color:white"><p>Phone: +61 3 8376 6284</p></a>
+                    <a href='mailto:mail@catholicwebiste.com' style="color: white"><p>Email:mail@catholicwebiste.com</p></a>
+                </div>
+                <div class="connect-content">
+                    <h2>Connect</h2>
+                    <div class="logo-content">
+                    <a href="https://www.facebook.com/" target="_blank"><div class="facebook"></div></a>
+                    <a href="https://www.twitter.com/" target="_blank"><div class="twitter"></div></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><div class="linkedin"></div></a>
+                </div>
+                </div>
             </div>
-
-            <div class="credit">created by <span>mr. web designer</span> | all right reserved! </div>
         </section>
-
-               
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+        <div class="copyright-content">
+            <p>Copyright © 2014 All rights reserved</p>
+        </div>
         <!-- custom js file link-->
         <script src="./js/script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <script>
 
-        lightGallery(document.querySelector('.projects .box-container'));
+        lightGallery(document.querySelector('.gallery .box-container'));
+    </script>
+    <script>
+        var swiper = new Swiper(".events-slider", {
+            loop: true,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                }
+            },
+        });
     </script>
     </body>
 </html>
